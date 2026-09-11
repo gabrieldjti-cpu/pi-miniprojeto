@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Serviços{% endblock %}
+{% block content %}
+<section class="page-heading container"><p class="eyebrow">CUIDADO E RESPEITO</p><h1>Nossos serviços</h1><p>Possibilidades de acolhimento para uma despedida com significado.</p></section>
+<section class="container section pt-0" aria-label="Catálogo de serviços"><div class="catalog-label"><span>Um olhar atento a cada necessidade</span><span>{{ servicos|length }} serviços</span></div>{% include "_cards.html" %}</section>
+<section class="quote-section"><div class="container"><h2>Cada família tem sua história.</h2><p>Conheça nossa proposta de atendimento e os canais de contato do projeto.</p><a class="btn btn-primary" href="{{ url_for('contato') }}">Ver contato ↗</a></div></section>
+{% endblock %}
